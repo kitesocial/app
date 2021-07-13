@@ -21,6 +21,7 @@ To run Kitesocial, you will need:
 - Yarn 1.22.10
 - Postgres 12+
 - Chrome or Chromium
+- ChromeDriver
 
 Once you've cloned the repo, run:
 
