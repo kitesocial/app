@@ -30,11 +30,7 @@ FileUtils.chdir APP_ROOT do
   # end
 
   puts "\n== Preparing database =="
-  if File.exist?('db/development.sqlite3')
-    system! 'bin/rails db:prepare'
-  else
-    system! 'bin/rails db:setup'
-  end
+  system! 'bin/rails db:prepare'
 
   puts "\n== Removing old logs and tempfiles =="
   system! 'bin/rails log:clear tmp:clear'
